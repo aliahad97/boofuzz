@@ -9,7 +9,7 @@ def main():
     This example is a very simple FTP fuzzer. It uses no process monitory
     (procmon) and assumes that the FTP server is already running.
     """
-    session = Session(target=Target(connection=TCPSocketConnection("127.0.0.1", 21)))
+    session = Session(target=Target(connection=TCPSocketConnection("127.0.0.1", 8021)))
 
     define_proto(session=session)
 
